@@ -1,0 +1,174 @@
+/* bai 1 */
+.bai01 .container{
+    width: 100%;
+    text-align: center;
+}
+.bai01 .img_logo{
+    width: 300px;
+}
+.bai01 .text{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.bai01 .flex_line{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.bai01 .btn{
+    width: 180px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #2a2e30;
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+.bai01 .btn img{
+    width: 30px;
+}
+
+/*----------------------------------------------------
+/* bai 2 */
+.bai02 .btn{
+    width: max-content;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius:4px ;
+    color: #fff;
+    background-color: #82e500;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+/* ----------------------------------------- */
+/* .bai03 */
+.bai03 body{
+    width: 900px;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+.bai03 .img{
+    width: 100%;
+}
+.bai03 p, ul{
+    color: #8d8b8b;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.bai03 .btn{
+    padding:15px 20px;
+    background-color: aqua;
+    color: #fff;
+    text-decoration: none;
+}
+/* ----------------------------------------- */
+/* .bai04 */
+.bai04 .container{
+    width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #c4c4c4;
+    text-align: center;
+}
+.bai04 img{
+    width: 100px;
+}
+.bai04 input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.bai04 .btn_send{
+    width: 120px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+}
+/* ----------------------------------------- */
+/* .bai05 */
+.bai05 .container{
+    width: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+.bai05 .img{
+    width: 100%;
+    height: 400px;
+}
+.bai05 .content{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000009d;
+}
+.bai05 h1,h3{
+    text-align: center;
+}
+.bai05 button{
+    padding: 15px 20px;
+    background-color: #ff0000e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+/* ----------------------------------------- */
+/* .bai06 */
+.bai06 .container {
+    width: 1000px;
+    height:300px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.bai06 .img {
+    width: 100%;
+    height: 100%;
+}
+
+.bai06 .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    background-color: #00000071;
+    box-sizing: border-box;
+}
+
+.bai06 .content .item {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.bai06 .content .item>img {
+    width: 80px;
+}
+.bai06 .content .item>div {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.bai06 .content .item>p {
+    width: 100%;
+    color: #ffbb00 !important;
+}
