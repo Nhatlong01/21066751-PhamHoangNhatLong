@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Bài 1 -->
+
+<div class="name">Bài 1</div>
+<div class="bai1">
+    <div class="bai1-container">
+        <h1 class="b1-heading">Giải phương trình bậc nhất</h1>
+         <form action="" class="bai1-form">
+            <input type="number" name="number-a" id="numb-a" placeholder="Nhập hệ số a">
+            <input type="number" name="number-b" id="numb-b" placeholder="Nhập hệ số b">
+            <input type="button" value="Giải phương trình" onclick="divide()">   
+         </form>
+         <h4>KẾT QUẢ</h4>
+        <div id="" > 
+            Nghiệm x = <span id="ketqua"></span>
+        </div>
+    </div>
+</div>
+
+<!--Bài 2 -->
+<div class="name">Bài 2</div>
+<div class="bai2">
+    <div class="bai2-container">
+        <div class="bai2-textcontainer">
+            <h1 class="bai2-text">Đóng góp ý kiến về sản phẩm</h1>
+            <p class="bai2-para">Góp ý của bạn sẽ được chúng tôi xem xét </p>
+            <p class="bai2-para">Các ý kiến nên viết chi tiết, rõ ràng kèm theo các minh chứng xác thực. </p>
+        </div>
+        <form action="" class="bai2-form">
+      <div class="bai2-form-container">
+        <input type="text" name="ten" id="bai2-ten" class="bai2-input">
+        <input type="text" name="phoneNumb" id="bai2-sdt" class="bai2-input"> 
+        <select type="text" name="option" id="bai2-option" class="bai2-input" >
+            <option value="1">Normal</option>
+            <option value="2">VIP</option>
+            <option value="3">VVIP</option>
+        </select>
+        <input type="text" name="CardId" id="bai2-mathe" placeholder="Mã thẻ" class="bai2-input">  
+        <input type="email" name="email" id="bai2-email" placeholder="E-mail" class="bai2-input"> 
+        <input type="email" name="invoiceId" id="bai2-invoiceid" placeholder="Mã hóa đơn" class="bai2-input"> 
+      </div>
+      <textarea id="input-description" class="bai2-textarea" class="bai2-input" required></textarea>
+        </form>
+        <button class="btn-bai2" type="submit" onclick="bai2()" >Gửi ý kiến</button>
+    </div>
+</div>
+
+<!--Bài 3 -->
+<div class="name">Bài 3</div>
+<h1 class="bai3-heading">LIÊN HỆ</h1>
+<div class="line"></div>
+<div class="bai3-body">
+    <div class="bai3-info">
+        <h4>Thông tin</h4>
+        <li>Gò Vấp, Tp.HCM</li>
+        <li>vanthuytran@gmail</li>
+        <li>0813416417</li>
+    </div>
+    <div class="bai3-form">
+        <h4 class="bai3-form-heading">
+            Hãy liên lạc với chúng tôi bất cứ khi nào bạn cần!
+      </h4>
+      <form action="" class="bai3-formcontainer">
+        <input type="text" name="ten" id="bai3-ten" placeholder="Họ và tên" >
+        <input type="email" name="ten" id="bai3-email" placeholder="Địa chỉ email">
+        <input type="text" name="ten" id="bai3-title" placeholder="Tiêu đề">
+        <textarea id="bai3-input-description" class="bai3-textarea" placeholder="Nội dung" required></textarea>
+       
+      </form>
+      <button class="btn-bai3" type="submit" onclick="bai3()" >Gửi ý kiến</button>
+    </div>
+</div>
+<!--Bài 4 -->
+<div class="name">Bài 4</div>
+<div class="bai4">
+    <div class="bai4-container">
+        <div class="bai4-heading">
+            TÍNH CHỈ SỐ 
+        </div>
+        <form action="" class="bai4-form">
+            <div class="weight">
+                <label for="weight">Nhập cân nặng ?</label><br>
+                <input type="text" name="weight" id="weight">
+            </div>
+            <div class="height">
+                <label for="height">Nhập chiều cao ?</label><br>
+                <input type="text" name="height" id="height">
+            </div>
+            <div class="bai4-option">
+                <label for="option">Chọn ?</label><br>
+                <select name="" id="bai4-select" class="bai3-select">
+                    <option value="" id="bai4-0">Chọn</option>
+                    <option value="0"  id="bai4-1">Trung niên</option>
+                    <option value="1"  id="bai4-2">Trung niên, già, lớn tuổi</option>
+                    <option value="2" id="bai4-3">Già, lớn tuổi</option>
+               </select>
+            </div>
+            <input type="button" value="Tính BMI" class="bai4-button" onclick="bai4()">
+        </form>
+        <div class="ketqua">
+            Kết quả là:
+            <div id="bai4-number"></div>
+            <div id="categories"></div>
+            <div id="message"></div>
+        </div>
+    </div>
+</div>
+
+<!--Bài 5 -->
+<div class="name">Bài 5</div>
+<div class="bai5">
+    <div class="bai5-container">
+        <h4 class="bai5-heading">Login</h4>
+        <form action="" >
+            <input type="text" class="bai5-name" placeholder="Tên TK"><br>
+            <input type="password" name="" id="bai5-password" class="bai5-pass" placeholder="Mật khẩu">
+            <input type="button" value="Mở khóa" class="bai5-btn" onclick="bai5()">
+        </form>
+        
+    </div>
+</div>
+<!--Bài 5 -->
+<div class="name">Bài 6</div>
+<div class="bai6">
+    <div class="bai6-container">
+        <h3>Login</h3>
+        <p>Login here using your username and password</p>
+        <form action="" class="bai6-form">
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="bai6-username" class="bai6-input"><br>
+            <i class="fa fa-instagram icon"></i>
+            <input type="password" id="bai6-password"  class="bai6-input">
+        </form>
+        <div class="bai6-button">
+            <span class="bai6-2button">
+                Fogot
+            </span>
+            <span class="bai6-2button">
+                Sign up
+            </span>
+        </div>
+    </div>
+</div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
