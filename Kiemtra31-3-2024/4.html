@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Section</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #5644df;
+        box-sizing: border-box;
+    }i
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ec6d78;
+        color: #f9f8f8;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .review {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .review p {
+        margin: 0;
+    }
+</style>
+</head>   
+<body>
+
+<div class="container">
+    <h1>Đánh Giá</h1>
+    <form id="reviewForm">
+        <input type="text" id="name" placeholder="Họ Và Tên" required><br>
+        <textarea id="content" placeholder="Nhập Đánh Giá" rows="4" required></textarea><br>
+        <input type="text" id="time" placeholder="Thời Gian" readonly><br>
+        <button type="submit">Gửi Đánh Giá</button>
+    </form>
+    <div id="reviews"></div>
+</div>
+
+<script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var name = document.getElementById("name").value;
+        var content = document.getElementById("content").value;
+        var time = getCurrentTime();
+
+        var reviewDiv = document.createElement("div");
+        reviewDiv.classList.add("review");
+        reviewDiv.innerHTML = "<p><strong>" + name + ": </strong>" + content + "<br><small>Time: " + time + "</small></p>";
+
+        document.getElementById("reviews").appendChild(reviewDiv);
+
+        // Clear input fields
+        document.getElementById("name").value = "";
+        document.getElementById("content").value = "";
+        document.getElementById("time").value = getCurrentTime();
+    });
+
+    function getCurrentTime() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        // Add leading zero if single digit
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        return timeString;
+    }
+</script>
+
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,37 @@
+h1{
+    color: #9966FF;
+
+}
+.title{
+    opacity: 0.5;
+    font-size: 12px;
+}
+.ipput_gird{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 650px;
+    height: 120px;
+}
+#content{
+    width: 645px;
+    height: 80px;
+    margin-top: 20px;
+}
+.btn{
+    color: white;
+    background-color: #0066FF;
+    border: 0px;
+    padding: 6px;
+    cursor: pointer;
+    margin-right:535px ;
+    margin-top: 10px;
+    width: 120px;
+}
+.border{
+    background-color: #FFF0F5;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 3px #B5B5B5;
+}
