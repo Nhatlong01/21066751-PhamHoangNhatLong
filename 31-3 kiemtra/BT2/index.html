@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Đóng góp ý kiến sản phẩm </title>
+  <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+            display: flex; /* Bố trí theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+        }
+
+        .input-group label {
+            display: inline-block;
+            width: 120px;
+            margin-right: 10px; /* Khoảng cách giữa nhãn và ô nhập liệu */
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 500px; /* phóng to  box sang phải */
+            padding: 5px;
+            margin-bottom: 0.5rem; /* khoảng cách các box */
+            line-height: 1.5; /* Độ giãn dòng của các input và textarea */
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .text-center {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .text-color {
+           color: #666;
+           line-height: 0.5;
+        }
+
+        .heading-color {
+            color: #000066;
+        }
+</style>
+    <script>
+        function submitForm() {
+            var inputName = document.getElementById('input-name').value;
+            var inputCard = document.getElementById('input-card').value;
+            var inputPhone = document.getElementById('input-phone').value;
+            var inputEmail = document.getElementById('input-email').value;
+            var inputCustomerType = document.getElementById('input-customer-type').value;
+            var inputInvoice = document.getElementById('input-invoice').value;
+            var inputDescription = document.getElementById('input-description').value;
+
+            if (inputName === '' || inputCard === '' || inputPhone === '' || inputEmail === '' || inputCustomerType === '' || inputInvoice === '' || inputDescription === '') {
+                alert('Vui lòng điền đầy đủ thông tin');
+            } else {
+                var confirmation = confirm('Xác nhận lại nội dung trước khi gửi?\nHọ và tên: ' + inputName + '\nMã thẻ: ' + inputCard + '\nSố điện thoại: ' + inputPhone + '\nEmail: ' + inputEmail + '\nChọn loại khách hàng: ' + inputCustomerType + '\nMã hóa đơn: ' + inputInvoice + '\nChi tiết mô tả: ' + inputDescription);
+
+                if (confirmation) {
+                    // Redirect to evaluation page
+                    window.location.href = "trang-danh-gia.html"; // Thay thế "trang-danh-gia.html" bằng đường dẫn thực tế của trang đánh giá
+                } else {
+// "Cancel"
+alert('Bạn đã hủy bỏ việc gửi tin nhắn.');
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="text-center heading-color">ĐÓNG GÓP Ý KIẾN SẢN PHẨM</h1>
+    <p class="text-center text-color">Góp ý của các bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu.</p>
+    <p class="text-center text-color">Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm (nếu có).</p>
+    
+    <div class="container">
+        <form action="#" method="post">
+            <div class="input-group">
+                <input type="text" id="input-name" name="input-name" placeholder="Họ và tên" required>   
+            </div>
+          
+            <div class="input-group">
+                <input type="text" id="input-card" name="input-card" placeholder="Mã thẻ" required>
+            </div>
+          
+            <div class="input-group">
+                <input type="tel" id="input-phone" name="input-phone" placeholder="Số điện thoại" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="input-email" name="input-email" placeholder="Email" required>
+            </div>
+          
+            <div class="input-group">
+                <select id="input-customer-type" required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+          
+            <div class="input-group">
+                <input type="text" id="input-invoice" name="input-invoice" placeholder="Mã hóa đơn" required>
+            </div>
+          
+            <div class="input-group">
+                <textarea id="input-description" name="input-description" placeholder="Chi tiết mô tả" required></textarea>
+            </div>
+          
+            <button class="btn" type="button" onclick="submitForm()">Gửi ý kiến</button>
+        </form>
+    </div>
+</body>
+</html>
