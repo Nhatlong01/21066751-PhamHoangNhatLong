@@ -1,0 +1,31 @@
+<html lang="vi">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+$('#pull').click(function() {
+$('nav ul').toggleClass('show');
+});
+});
+</script>
+<link rel="stylesheet" href="bt.css">
+</head>
+<body>
+    <nav class="clearfix">
+    <ul class="clearfix">
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+          <a href="#">Đào tạo</a>
+          <ul class="sub-menu">
+          <li><a href="#">Đồ họa</a></li>
+          <li><a href="#">Web</a></li>
+          <li><a href="#">Mạng</a></li>
+          </ul>
+          </li>
+          <li><a href="#">Dịch vụ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+      </ul>
+    <a href="#" id="pull"><i class="fas fa-bars"></i></a>
+</nav>
+</body>
+</html>
