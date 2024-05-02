@@ -1,0 +1,76 @@
+/* Cài đặt background cho body */
+body {
+    background-image: url(https://i.pinimg.com/736x/2f/23/37/2f233768ad2f56267124625bbedf23a8.jpg);
+    background-repeat: repeat; /* Lặp lại ảnh nền */
+    background-size: cover; /* Bao phủ toàn bộ màn hình */
+  }
+  
+  /* Chỉnh sửa kích thước ảnh đại diện */
+  img[width="100"] {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Tăng kích thước tiêu đề h1 */
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  /* Canh giữa nội dung */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Thêm đường viền cho các phần */
+  .section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .section.tinh-cach {
+    display: flex;
+    flex-direction: column; /* Chia theo chiều dọc */
+    justify-content: space-between;
+    align-items: center; /* Canh giữa các mục theo chiều ngang */
+  }
+  
+  .section.so-thich {
+    display: flex;
+    flex-direction: column; /* Chia theo chiều dọc */
+    justify-content: space-between;
+    align-items: center; /* Canh giữa các mục theo chiều ngang */
+  }
+  /* Tạo danh sách có dấu chấm */
+  ul {
+    padding: 0;
+  }
+  
+  /* Tạo khoảng cách giữa các mục trong danh sách */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Tạo radio button */
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Thêm padding cho các input */
+  input[type="text"],
+  select {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Tạo nút bấm */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
